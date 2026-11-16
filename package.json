@@ -1,0 +1,9 @@
+{
+  "name": "license-guard-deploy",
+  "private": true,
+  "type": "module",
+  "description": "Dry-run deploy helper for the LicenseGuard intelligent contract.",
+  "dependencies": {
+    "genlayer-js": "1.1.8"
+  }
+}
