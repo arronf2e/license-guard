@@ -6,7 +6,9 @@ The policy is ordinary data: required permissions, forbidden obligations, obliga
 
 This is an attestation about the text that was submitted. It is not legal advice, and it does not establish that the text is the license of a named package.
 
-Deployment address: **PENDING**. `deploy/address.json` stays pending until an operator deploys it. No deployment was performed from this repository.
+Deployed on GenLayer Studio (studionet):
+[`0x9bda6728b13f2cDce3562bBCCF9330c962571ba2`](https://explorer-studio.genlayer.com/address/0x9bda6728b13f2cDce3562bBCCF9330c962571ba2).
+The deploying account is `0xEf047a1fEbD27E18CA8EF7Ab2C1f3f91B0d733a3`. Transaction hashes are in `deploy/address.json`.
 
 ## Consensus
 
@@ -99,7 +101,7 @@ await client.deployContract({
 
 ### Demo writes
 
-Replace `ADDRESS` after a real deploy. It is not known here.
+Replace `ADDRESS` with the studionet address in `deploy/address.json`.
 
 ```bash
 genlayer write ADDRESS register_policy --args \
@@ -209,7 +211,7 @@ Direct-mode tests mock `gl.nondet.web.get` and `gl.nondet.exec_prompt`. They do 
 - Anchor checks reject ungrounded and off-topic quotes. They are not a parser for nested legal exceptions.
 - URL fetches trust HTTPS at the GenVM boundary. The contract rejects credentials, non-443 ports, and IP literals. It does not authenticate the host as the upstream project.
 - The stored excerpt and FNV revision are not enough to reconstruct the license, and the revision is not collision-resistant.
-- No studio, testnet, or mainnet deployment was run for this repository. `deploy/address.json` is `PENDING`.
+- Direct-mode tests mock web and model calls and do not start a multi-validator network. The studionet transactions listed in `deploy/address.json` are live Studio consensus, not those mocks.
 
 ## License
 

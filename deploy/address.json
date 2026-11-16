@@ -1,6 +1,12 @@
 {
-  "address": "PENDING",
-  "network": "PENDING",
-  "tx": "PENDING",
-  "note": "Not deployed. The coordinator deploys after review. Do not treat this file as a live address."
+  "address": "0x9bda6728b13f2cDce3562bBCCF9330c962571ba2",
+  "network": "studionet",
+  "explorer": "https://explorer-studio.genlayer.com/address/0x9bda6728b13f2cDce3562bBCCF9330c962571ba2",
+  "deployer": "0xEf047a1fEbD27E18CA8EF7Ab2C1f3f91B0d733a3",
+  "tx": "0xa44925dd1faeedaf414766990ce4049ef7c2ae508e33d483e64578540a74e887",
+  "example": {
+    "register_policy": "0xbf3b0aa135acb5d282c5a13354c42270b42c62809a09fd00b642e2b82ba86339",
+    "attest": "0x78c760dcf7247685ec160d1d0fea75d4f3fa88b0ba0e143748a832383a7972c1"
+  },
+  "note": "Filled after the studionet deployment and example writes."
 }
